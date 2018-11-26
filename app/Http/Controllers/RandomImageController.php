@@ -13,7 +13,13 @@ class RandomImageController extends Controller
         $img = Image::make(public_path("$number.jpg"));
 
         return $img->response();
+    }
 
+    public function show2()
+    {
+        $number = rand(1, 2);
+        $img = Image::make(public_path("kaplan/$number.jpg"));
 
+        return $img->response();
     }
 }

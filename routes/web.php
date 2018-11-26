@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('random-image', 'RandomImageController@show');
+Route::get('random-image2', 'RandomImageController@show2');
